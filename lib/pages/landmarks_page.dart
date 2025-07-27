@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gallary_app/widget/sharedWidget/places_shared_card.dart';
 
-class NightlifePage extends StatelessWidget {
-  const NightlifePage({super.key});
+class LandmarksPage extends StatelessWidget {
+  const LandmarksPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,11 +10,11 @@ class NightlifePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xFFFBF5DE),
         title: const Text(
-          "Nightlife",
+          "landmarks",
           style: TextStyle(
             fontSize: 24.0,
             fontWeight: FontWeight.bold,
-            color: Color(0xFF4A9782),
+            color: Color(0xFF113F67),
           ),
         ),
       ),
@@ -29,7 +29,7 @@ class NightlifePage extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               PlacessharedCard(
-                title: 'Nightlife Place-1',
+                title: 'Landmarks Place-1',
                 imageUrl: 'assets/nature_wonder1.png',
                 disciption:
                     "Welcome to our travel app, your ultimate guide to discovering captivating destinations around the globe! Whether you're seeking the tranquility visit offers something for every traveler.",
@@ -38,7 +38,7 @@ class NightlifePage extends StatelessWidget {
           
               const SizedBox(height: 20),
               PlacessharedCard(
-                title: 'Nightlife Place-2',
+                title: 'Landmarks Place-2',
                 imageUrl: 'assets/nature_wonder1.png',
                 disciption:
                     "Welcome to our travel app, your ultimate guide to discovering captivating destinations around the globe! Whether you're seeking the tranquility visit offers something for every traveler.",

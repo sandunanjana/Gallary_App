@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gallary_app/pages/landmarks_page.dart';
 import 'package:gallary_app/pages/natural_wonder_page.dart';
 import 'package:gallary_app/pages/nightlife_page.dart';
 import 'package:gallary_app/widget/home_pageWidget/category_card.dart';
@@ -101,10 +102,15 @@ class HomePage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        CategoryCard(
-                          backGroundColor: Color(0xFF34699A),
-                          cardWight: 155,
-                          cardTitle: "Landmarks",
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => const LandmarksPage(),),);
+                          },
+                          child: CategoryCard(
+                            backGroundColor: Color(0xFF34699A),
+                            cardWight: 155,
+                            cardTitle: "Landmarks",
+                          ),
                         ),
                         CategoryCard(
                           backGroundColor: Color(0xFF34699A),
