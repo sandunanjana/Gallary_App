@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gallary_app/pages/natural_wonder_page.dart';
+import 'package:gallary_app/pages/nightlife_page.dart';
 import 'package:gallary_app/widget/home_pageWidget/category_card.dart';
 
 class HomePage extends StatelessWidget {
@@ -84,10 +85,15 @@ class HomePage extends StatelessWidget {
                             cardTitle: "Natural Wonders",
                           ),
                         ),
-                        CategoryCard(
-                          backGroundColor: Color(0xFF113F67),
-                          cardWight: 155,
-                          cardTitle: "Nightlife",
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => const NightlifePage(),),);
+                          },
+                          child: CategoryCard(
+                            backGroundColor: Color(0xFF113F67),
+                            cardWight: 155,
+                            cardTitle: "Nightlife",
+                          ),
                         ),
                       ],
                     ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gallary_app/widget/naturalWondersWigget/places_card.dart';
+import 'package:gallary_app/widget/sharedWidget/places_shared_card.dart';
 
-class NaturalWonderPage extends StatelessWidget {
-  const NaturalWonderPage({super.key});
+class NightlifePage extends StatelessWidget {
+  const NightlifePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class NaturalWonderPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xFFFBF5DE),
         title: const Text(
-          "Natural Wonders",
+          "Nightlife",
           style: TextStyle(
             fontSize: 24.0,
             fontWeight: FontWeight.bold,
@@ -18,10 +18,9 @@ class NaturalWonderPage extends StatelessWidget {
           ),
         ),
       ),
-
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 15.0),
+          padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 15),
           child: Column(
             children: [
               Text(
@@ -29,29 +28,22 @@ class NaturalWonderPage extends StatelessWidget {
                 style: const TextStyle(fontSize: 16, color: Color(0xFF3B3636)),
               ),
               const SizedBox(height: 20),
-              PlacesCard(
-                title: 'Nature Wonders Place-1',
-                disciption:
-                    "Welcome to our travel app, your ultimate guide to discovering captivating destinations around the globe! Whether you're seeking the tranquility visit offers something for every traveler.",
+              PlacessharedCard(
+                title: 'Nightlife Place-1',
                 imageUrl: 'assets/nature_wonder1.png',
-              ),
-
-              const SizedBox(height: 20),
-              PlacesCard(
-                title: 'Nature Wonders Place-2',
                 disciption:
                     "Welcome to our travel app, your ultimate guide to discovering captivating destinations around the globe! Whether you're seeking the tranquility visit offers something for every traveler.",
-                imageUrl: 'assets/nature_wonder2.png',
+                isConerRounded: true,
               ),
-
+          
               const SizedBox(height: 20),
-              PlacesCard(
-                title: 'Nature Wonders Place-3',
+              PlacessharedCard(
+                title: 'Nightlife Place-1',
+                imageUrl: 'assets/nature_wonder1.png',
                 disciption:
                     "Welcome to our travel app, your ultimate guide to discovering captivating destinations around the globe! Whether you're seeking the tranquility visit offers something for every traveler.",
-                imageUrl: 'assets/nature_wonder3.png',
+                isConerRounded: true,
               ),
-              SizedBox(height: 15),
             ],
           ),
         ),
