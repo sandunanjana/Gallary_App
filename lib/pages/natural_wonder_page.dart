@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gallary_app/widget/naturalWondersWigget/places_card.dart';
+//import 'package:gallary_app/widget/naturalWonderswigget/places_card.dart';
+import 'package:gallary_app/widget/natural_wonders_pagewidget/places_card.dart';
 
 class NaturalWonderPage extends StatelessWidget {
   const NaturalWonderPage({super.key});
