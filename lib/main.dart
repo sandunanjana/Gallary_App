@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gallary_app/pages/home_page.dart';
 
+
 void main() {
   runApp(const MyApp());
 }

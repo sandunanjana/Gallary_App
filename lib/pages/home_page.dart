@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gallary_app/pages/natural_wonder_page.dart';
 import 'package:gallary_app/widget/home_pageWidget/category_card.dart';
 
 class HomePage extends StatelessWidget {
@@ -56,7 +57,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                Image.asset("assets/home_page1.png", fit: BoxFit.cover),
+                Image.asset("assets/home_page01.png", fit: BoxFit.cover),
                 const SizedBox(height: 20),
                 Text(
                   "Select a Place from the categories",
@@ -73,10 +74,15 @@ class HomePage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        CategoryCard(
-                          backGroundColor: Color(0xFF113F67),
-                          cardWight: 155,
-                          cardTitle: "Natural Wonders",
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => const NaturalWonderPage(),),);
+                          },
+                          child: CategoryCard(
+                            backGroundColor: Color(0xFF113F67),
+                            cardWight: 155,
+                            cardTitle: "Natural Wonders",
+                          ),
                         ),
                         CategoryCard(
                           backGroundColor: Color(0xFF113F67),
@@ -84,7 +90,6 @@ class HomePage extends StatelessWidget {
                           cardTitle: "Nightlife",
                         ),
                       ],
-                      
                     ),
                     SizedBox(height: 20),
                     Row(
@@ -102,13 +107,13 @@ class HomePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                      SizedBox(height: 20),
+                    SizedBox(height: 20),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         CategoryCard(
                           backGroundColor: Color(0xFF58A0C8),
-                          cardWight:155 * 2,
+                          cardWight: 155 * 2,
                           cardTitle: "Book For A Ride Today!",
                         ),
                       ],
